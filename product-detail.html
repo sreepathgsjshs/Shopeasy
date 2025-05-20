@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Product-detail </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details - ShopEasy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header (same as index.html) -->
+
+    <header class="main-header">
+
+        <!-- Copy header from index.html -->
+
+    </header>
+
+    <!-- Product Detail Section -->
+
+    <section class="product-detail">
+
+        <div class="container">
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a> &gt; <a href="products.html">Shop</a> &gt; <span>Product Name</span>
+
+            </div>
+
+            
+
+            <div class="product-detail-container">
+
+                <div class="product-gallery">
+
+                    <div class="main-image">
+
+                        <img src="images/product1-lg.jpg" alt="Product" id="mainImage">
+
+                    </div>
+
+                    <div class="thumbnail-container">
+
+                        <div class="thumbnail active" data-image="images/product1-lg.jpg">
+
+                            <img src="images/product1-sm.jpg" alt="Thumbnail">
+
+                        </div>
+
+                        <div class="thumbnail" data-image="images/product2-lg.jpg">
+
+                            <img src="images/product2-sm.jpg" alt="Thumbnail">
+
+                        </div>
+
+                        <div class="thumbnail" data-image="images/product3-lg.jpg">
+
+                            <img src="images/product3-sm.jpg" alt="Thumbnail">
+
+                        </div>
+
+                        <div class="thumbnail" data-image="images/product4-lg.jpg">
+
+                            <img src="images/product4-sm.jpg" alt="Thumbnail">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="product-info">
+
+                    <h1>Wireless Bluetooth Headphones</h1>
+
+                    <div class="product-meta">
+
+                        <div class="rating">
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="far fa-star"></i>
+
+                            <span>(24 reviews)</span>
+
+                        </div>
+
+                        <div class="availability">
+
+                            <i class="fas fa-check-circle"></i> In Stock
+
+                        </div>
+
+                        <div class="sku">
+
+                            SKU: HD12345
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="price">
+
+                        <span class="current">$79.99</span>
+
+                        <span class="old">$99.99</span>
+
+                    </div>
+
+                    
+
+                    <div class="product-description">
+
+                        <p>Experience crystal-clear sound with our premium wireless Bluetooth headphones. Featuring noise cancellation, 30-hour battery life, and comfortable over-ear design for all-day listening.</p>
+
+                        <ul>
+
+                            <li>Active Noise Cancellation</li>
+
+                            <li>30-hour battery life</li>
+
+                            <li>Built-in microphone</li>
+
+                            <li>Bluetooth 5.0</li>
+
+                            <li>Foldable design</li>
+
+                        </ul>
+
+                    </div>
+
+                    
+
+                    <div class="product-options">
+
+                        <div class="option">
+
+                            <label>Color:</label>
+
+                            <div class="color-options">
+
+                                <span class="color-option black active" data-color="Black"></span>
+
+                                <span class="color-option blue" data-color="Blue"></span>
+
+                                <span class="color-option red" data-color="Red"></span>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="option">
+
+                            <label>Quantity:</label>
+
+                            <div class="quantity-selector">
+
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+
+                                <input type="number" value="1" min="1">
+
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="product-actions">
+
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+
+                        <button class="btn wishlist-btn"><i class="far fa-heart"></i> Wishlist</button>
+
+                    </div>
+
+                    
+
+                    <div class="product-share">
+
+                        <span>Share:</span>
+
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="product-tabs">
+
+                <ul class="tab-nav">
+
+                    <li class="active" data-tab="description">Description</li>
+
+                    <li data-tab="specifications">Specifications</li>
+
+                    <li data-tab="reviews">Reviews</li>
+
+                </ul>
+
+                
+
+                <div class="tab-content active" id="description">
+
+                    <h3>Product Description</h3>
+
+                    <p>Our Wireless Bluetooth Headphones deliver premium sound quality with advanced noise cancellation technology. The ergonomic design ensures comfort for extended listening sessions, while the 30-hour battery life keeps you immersed in your music all day long.</p>
+
+                    <p>The headphones feature Bluetooth 5.0 for stable connectivity up to 30 feet from your device. The built-in microphone allows for hands-free calls, and the intuitive controls let you manage your music and calls without reaching for your phone.</p>
+
+                </div>
+
+                
+
+                <div class="tab-content" id="specifications">
+
+                    <h3>Technical Specifications</h3>
+
+                    <table>
+
+                        <tr>
+
+                            <th>Brand</th>
+
+                            <td>AudioPro</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Model</th>
+
+                            <td>AP-BT550</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Connectivity</th>
+
+                            <td>Bluetooth 5.0</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Battery Life</th>
+
+                            <td>Up to 30 hours</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Charging Time</th>
+
+                            <td>2 hours</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Weight</th>
+
+                            <td>255g</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Warranty</th>
+
+                            <td>2 years</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                
+
+                <div class="tab-content" id="reviews">
+
+                    <h3>Customer Reviews</h3>
+
+                    <div class="review-form">
+
+                        <h4>Write a Review</h4>
+
+                        <form>
+
+                            <div class="form-group">
+
+                                <label>Your Rating</label>
+
+                                <div class="rating-input">
+
+                                    <i class="far fa-star" data-rating="1"></i>
+
+                                    <i class="far fa-star" data-rating="2"></i>
+
+                                    <i class="far fa-star" data-rating="3"></i>
+
+                                    <i class="far fa-star" data-rating="4"></i>
+
+                                    <i class="far fa-star" data-rating="5"></i>
+
+                                    <input type="hidden" name="rating" id="rating-value" value="0">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="review-name">Your Name</label>
+
+                                <input type="text" id="review-name" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="review-email">Email</label>
+
+                                <input type="email" id="review-email" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="review-text">Your Review</label>
+
+                                <textarea id="review-text" rows="5" required></textarea>
+
+                            </div>
+
+                            <button type="submit" class="btn">Submit Review</button>
+
+                        </form>
+
+                    </div>
+
+                    
+
+                    <div class="reviews-list">
+
+                        <div class="review">
+
+                            <div class="review-header">
+
+                                <div class="review-author">John D.</div>
+
+                                <div class="review-rating">
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+
+                                </div>
+
+                                <div class="review-date">June 15, 2023</div>
+
+                            </div>
+
+                            <div class="review-content">
+
+                                <h5>Excellent sound quality</h5>
+
+                                <p>These headphones exceeded my expectations. The noise cancellation is fantastic and the battery life is as advertised. Very comfortable for long listening sessions.</p>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="review">
+
+                            <div class="review-header">
+
+                                <div class="review-author">Sarah M.</div>
+
+                                <div class="review-rating">
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+
+                                    <i class="far fa-star"></i>
+
+                                </div>
+
+                                <div class="review-date">May 28, 2023</div>
+
+                            </div>
+
+                            <div class="review-content">
+
+                                <h5>Great value</h5>
+
+                                <p>For the price, these are excellent headphones. The sound is crisp and clear, though the bass could be a bit stronger. Very comfortable even after hours of use.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="related-products">
+
+                <h3>You May Also Like</h3>
+
+                <div class="product-grid">
+
+                    <!-- Related products will be loaded here -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer (same as index.html) -->
+
+    <footer class="main-footer">
+
+        <!-- Copy footer from index.html -->
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/product-detail.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

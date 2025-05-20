@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Account 13</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Account - ShopEasy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/account.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header (same as index.html) -->
+
+    <header class="main-header">
+
+        <!-- Copy header from index.html -->
+
+    </header>
+
+    <!-- Account Section -->
+
+    <section class="account-section">
+
+        <div class="container">
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a> &gt; <span>My Account</span>
+
+            </div>
+
+            
+
+            <div class="account-container">
+
+                <!-- Sidebar Navigation -->
+
+                <aside class="account-sidebar">
+
+                    <div class="account-info">
+
+                        <div class="account-avatar">
+
+                            <img src="images/avatar.jpg" alt="User Avatar">
+
+                            <button class="change-avatar">Change</button>
+
+                        </div>
+
+                        <div class="account-name">John Doe</div>
+
+                        <div class="account-email">john.doe@example.com</div>
+
+                    </div>
+
+                    
+
+                    <nav class="account-menu">
+
+                        <ul>
+
+                            <li class="active"><a href="#" data-tab="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+
+                            <li><a href="#" data-tab="orders"><i class="fas fa-shopping-bag"></i> Orders</a></li>
+
+                            <li><a href="#" data-tab="addresses"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+
+                            <li><a href="#" data-tab="wishlist"><i class="fas fa-heart"></i> Wishlist</a></li>
+
+                            <li><a href="#" data-tab="account-details"><i class="fas fa-user-cog"></i> Account Details</a></li>
+
+                            <li><a href="#" data-tab="payment-methods"><i class="fas fa-credit-card"></i> Payment Methods</a></li>
+
+                            <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                </aside>
+
+                
+
+                <!-- Main Content Area -->
+
+                <main class="account-content">
+
+                    <!-- Dashboard Tab -->
+
+                    <div class="account-tab active" id="dashboard">
+
+                        <h2>Dashboard</h2>
+
+                        <div class="welcome-message">
+
+                            <p>Hello <strong>John Doe</strong> (not <strong>John Doe</strong>? <a href="#">Log out</a>)</p>
+
+                            <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+
+                        </div>
+
+                        
+
+                        <div class="account-stats">
+
+                            <div class="stat-card">
+
+                                <div class="stat-icon">
+
+                                    <i class="fas fa-shopping-bag"></i>
+
+                                </div>
+
+                                <div class="stat-info">
+
+                                    <div class="stat-number">5</div>
+
+                                    <div class="stat-label">Total Orders</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="stat-card">
+
+                                <div class="stat-icon">
+
+                                    <i class="fas fa-heart"></i>
+
+                                </div>
+
+                                <div class="stat-info">
+
+                                    <div class="stat-number">12</div>
+
+                                    <div class="stat-label">Wishlist Items</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="stat-card">
+
+                                <div class="stat-icon">
+
+                                    <i class="fas fa-map-marker-alt"></i>
+
+                                </div>
+
+                                <div class="stat-info">
+
+                                    <div class="stat-number">2</div>
+
+                                    <div class="stat-label">Saved Addresses</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="recent-orders">
+
+                            <h3>Recent Orders</h3>
+
+                            <div class="orders-table">
+
+                                <table>
+
+                                    <thead>
+
+                                        <tr>
+
+                                            <th>Order</th>
+
+                                            <th>Date</th>
+
+                                            <th>Status</th>
+
+                                            <th>Total</th>
+
+                                            <th>Actions</th>
+
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+
+                                            <td>#1001</td>
+
+                                            <td>June 15, 2023</td>
+
+                                            <td><span class="status completed">Completed</span></td>
+
+                                            <td>$179.98</td>
+
+                                            <td><a href="#" class="view-order">View</a></td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>#1000</td>
+
+                                            <td>June 5, 2023</td>
+
+                                            <td><span class="status processing">Processing</span></td>
+
+                                            <td>$89.99</td>
+
+                                            <td><a href="#" class="view-order">View</a></td>
+
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Orders Tab -->
+
+                    <div class="account-tab" id="orders">
+
+                        <h2>Orders</h2>
+
+                        <div class="orders-table">
+
+                            <table>
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Order</th>
+
+                                        <th>Date</th>
+
+                                        <th>Status</th>
+
+                                        <th>Total</th>
+
+                                        <th>Actions</th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>#1001</td>
+
+                                        <td>June 15, 2023</td>
+
+                                        <td><span class="status completed">Completed</span></td>
+
+                                        <td>$179.98</td>
+
+                                        <td><a href="#" class="view-order">View</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>#1000</td>
+
+                                        <td>June 5, 2023</td>
+
+                                        <td><span class="status processing">Processing</span></td>
+
+                                        <td>$89.99</td>
+
+                                        <td><a href="#" class="view-order">View</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>#999</td>
+
+                                        <td>May 28, 2023</td>
+
+                                        <td><span class="status completed">Completed</span></td>
+
+                                        <td>$129.99</td>
+
+                                        <td><a href="#" class="view-order">View</a></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>#998</td>
+
+                                        <td>May 15, 2023</td>
+
+                                        <td><span class="status cancelled">Cancelled</span></td>
+
+                                        <td>$49.99</td>
+
+                                        <td><a href="#" class="view-order">View</a></td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Addresses Tab -->
+
+                    <div class="account-tab" id="addresses">
+
+                        <h2>Addresses</h2>
+
+                        <p>The following addresses will be used on the checkout page by default.</p>
+
+                        
+
+                        <div class="addresses-container">
+
+                            <div class="address-card">
+
+                                <div class="address-header">
+
+                                    <h3>Billing Address</h3>
+
+                                    <a href="#" class="edit-address">Edit</a>
+
+                                </div>
+
+                                <div class="address-content">
+
+                                    <p>John Doe</p>
+
+                                    <p>123 Main Street</p>
+
+                                    <p>New York, NY 10001</p>
+
+                                    <p>United States</p>
+
+                                    <p>Phone: (123) 456-7890</p>
+
+                                    <p>Email: john.doe@example.com</p>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="address-card">
+
+                                <div class="address-header">
+
+                                    <h3>Shipping Address</h3>
+
+                                    <a href="#" class="edit-address">Edit</a>
+
+                                </div>
+
+                                <div class="address-content">
+
+                                    <p>John Doe</p>
+
+                                    <p>123 Main Street</p>
+
+                                    <p>New York, NY 10001</p>
+
+                                    <p>United States</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <button class="btn add-new-address">Add New Address</button>
+
+                    </div>
+
+                    
+
+                    <!-- Wishlist Tab -->
+
+                    <div class="account-tab" id="wishlist">
+
+                        <h2>Wishlist</h2>
+
+                        <div class="wishlist-grid">
+
+                            <div class="wishlist-item">
+
+                                <div class="wishlist-product">
+
+                                    <div class="product-image">
+
+                                        <img src="images/product1.jpg" alt="Product">
+
+                                        <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+
+                                    </div>
+
+                                    <div class="product-info">
+
+                                        <h3 class="product-title">Wireless Bluetooth Headphones</h3>
+
+                                        <div class="product-price">$79.99</div>
+
+                                        <div class="product-stock in-stock">In Stock</div>
+
+                                        <button class="btn add-to-cart">Add to Cart</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="wishlist-item">
+
+                                <div class="wishlist-product">
+
+                                    <div class="product-image">
+
+                                        <img src="images/product2.jpg" alt="Product">
+
+                                        <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+
+                                    </div>
+
+                                    <div class="product-info">
+
+                                        <h3 class="product-title">Smart Watch Fitness Tracker</h3>
+
+                                        <div class="product-price">$129.99</div>
+
+                                        <div class="product-stock in-stock">In Stock</div>
+
+                                        <button class="btn add-to-cart">Add to Cart</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="wishlist-item">
+
+                                <div class="wishlist-product">
+
+                                    <div class="product-image">
+
+                                        <img src="images/product5.jpg" alt="Product">
+
+                                        <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+
+                                    </div>
+
+                                    <div class="product-info">
+
+                                        <h3 class="product-title">Noise Cancelling Headphones</h3>
+
+                                        <div class="product-price">$199.99</div>
+
+                                        <div class="product-stock out-of-stock">Out of Stock</div>
+
+                                        <button class="btn notify-me">Notify Me</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Account Details Tab -->
+
+                    <div class="account-tab" id="account-details">
+
+                        <h2>Account Details</h2>
+
+                        <form class="account-details-form">
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="first-name">First Name *</label>
+
+                                    <input type="text" id="first-name" value="John" required>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="last-name">Last Name *</label>
+
+                                    <input type="text" id="last-name" value="Doe" required>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="form-group">
+
+                                <label for="display-name">Display Name *</label>
+
+                                <input type="text" id="display-name" value="JohnDoe" required>
+
+                                <p class="form-note">This will be how your name will be displayed in the account section and in reviews</p>
+
+                            </div>
+
+                            
+
+                            <div class="form-group">
+
+                                <label for="email">Email Address *</label>
+
+                                <input type="email" id="email" value="john.doe@example.com" required>
+
+                            </div>
+
+                            
+
+                            <fieldset class="password-change">
+
+                                <legend>Password Change</legend>
+
+                                <div class="form-group">
+
+                                    <label for="current-password">Current Password (leave blank to leave unchanged)</label>
+
+                                    <input type="password" id="current-password">
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="new-password">New Password (leave blank to leave unchanged)</label>
+
+                                    <input type="password" id="new-password">
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="confirm-password">Confirm New Password</label>
+
+                                    <input type="password" id="confirm-password">
+
+                                </div>
+
+                            </fieldset>
+
+                            
+
+                            <button type="submit" class="btn save-changes">Save Changes</button>
+
+                        </form>
+
+                    </div>
+
+                    
+
+                    <!-- Payment Methods Tab -->
+
+                    <div class="account-tab" id="payment-methods">
+
+                        <h2>Payment Methods</h2>
+
+                        <div class="payment-methods-list">
+
+                            <div class="payment-method">
+
+                                <div class="payment-method-header">
+
+                                    <div class="payment-method-title">
+
+                                        <i class="fab fa-cc-visa"></i>
+
+                                        <span>Visa ending in 4242</span>
+
+                                    </div>
+
+                                    <div class="payment-method-actions">
+
+                                        <a href="#" class="edit-payment">Edit</a>
+
+                                        <a href="#" class="remove-payment">Remove</a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="payment-method-details">
+
+                                    <p>Expires 12/2025</p>
+
+                                    <p>John Doe</p>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <div class="payment-method">
+
+                                <div class="payment-method-header">
+
+                                    <div class="payment-method-title">
+
+                                        <i class="fab fa-cc-paypal"></i>
+
+                                        <span>PayPal</span>
+
+                                    </div>
+
+                                    <div class="payment-method-actions">
+
+                                        <a href="#" class="edit-payment">Edit</a>
+
+                                        <a href="#" class="remove-payment">Remove</a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="payment-method-details">
+
+                                    <p>john.doe@example.com</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <button class="btn add-payment-method">Add Payment Method</button>
+
+                    </div>
+
+                </main>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer (same as index.html) -->
+
+    <footer class="main-footer">
+
+        <!-- Copy footer from index.html -->
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/account.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
